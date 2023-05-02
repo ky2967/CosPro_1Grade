@@ -4,7 +4,8 @@ class Solution{
         int mn = inf;
         int ans = -inf;
         for(int price : prices){
-            if(mn != inf) ans = Math.max(ans, price - mn);
+            if(mn != inf) 
+            	ans = Math.max(ans, price - mn);
             mn = Math.min(mn, price);
         }
         return ans;

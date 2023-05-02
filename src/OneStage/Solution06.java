@@ -15,7 +15,8 @@ class Solution06 {
             else if(recordA[i] == func(recordB[i]))
                 cnt = cnt + 3;
             else
-                cnt = cnt - 1;
+            	// cnt = cnt - 1;
+                cnt = cnt == 0 ? 0 : cnt - 1;	// 조건절 외에도 변수 업데이트 구문에서 문제 발생. 문제에서 놓치는 부분인 경우
         }
         return cnt;
     }

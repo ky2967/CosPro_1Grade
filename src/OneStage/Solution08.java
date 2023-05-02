@@ -18,7 +18,7 @@ class Solution08 {
         }
     }
     
-    class PizzaStore @@@ {
+    class PizzaStore implements DeliveryStore {		// Overriding
         private ArrayList<Food> menuList;
         private ArrayList<String> orderList;
         
@@ -34,12 +34,12 @@ class Solution08 {
             orderList = new ArrayList<String>();
         }
         
-        public @@@{
+        public void setOrderList(String[] orderList) {
             for(int i = 0; i < orderList.length; i++)
                 this.orderList.add(orderList[i]);
         }
         
-        public @@@{
+        public int getTotalPrice() {
             int totalPrice = 0;
             Iterator<String> iter = orderList.iterator();
             while (iter.hasNext()) {

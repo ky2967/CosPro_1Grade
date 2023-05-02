@@ -30,10 +30,10 @@ class Solution10 {
         return ret;
     }
     
-    public int solution(String expression) {
-        int expIndex = func_@@@(@@@);
-        Pair numbers = func_@@@(@@@);
-        int result = func_@@@(@@@);
+    public int solution(String expression) {	// 함수 찾기 
+        int expIndex = func_b(expression);		// 최초 파라미터가 들어갈 수 밖에 없는 함수
+        Pair numbers = func_c(expression, expIndex);	// return 타입이 유일한 함수
+        int result = func_a(numbers.firstNum, numbers.secondNum, expression.charAt(expIndex));	// 위에 두 함수에 나온 리턴값을 파라미터로 연결
         return result;
     }
 

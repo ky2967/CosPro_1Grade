@@ -2,7 +2,7 @@ package OneStage;
 class Solution09 {
     public String func_a(String str, int len){
         String padZero = "";
-        int padSize = @@@;
+        int padSize = len - str.length();
         for(int i = 0; i < padSize; i++)
             padZero += "0";
         return padZero + str;
@@ -14,8 +14,8 @@ class Solution09 {
         binaryB = func_a(binaryB, maxLength);
         
         int hammingDistance = 0;
-        for(int i = 0; i < maxLength; i++)
-            if(@@@)
+        for(int i = 0; i < maxLength; i++)	// 5
+        if(binaryA.charAt(i) != binaryB.charAt(i))		// 예시의 중간 결과값들을 주석에 적으면서 과정 처리
                 hammingDistance += 1;
         return hammingDistance;
     }

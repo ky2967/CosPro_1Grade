@@ -21,7 +21,9 @@ class Solution05 {
         int answer[] = new int[cnt];
         for (int i = 1, idx = 0; i <= N; i++){
             if (voteCounter[i] == maxVal) {
-                answer[idx] = voteCounter[i];
+                //answer[idx] = voteCounter[i];
+                answer[idx] = i;		// 최초 answer가 어떻게 나오는지 확인 후 디버깅을 하면서 한줄씩 들어오는 값 확인. 
+                						// answer로 들어가는 데이터 확인
                 idx += 1;
             }
         }
