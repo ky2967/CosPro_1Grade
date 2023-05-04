@@ -7,16 +7,16 @@ class Solution {
         int arrB_len = arrB.length;
         int answer[] = new int[arrA_len + arrB_len];
         int answer_idx = 0;
-        while(@@@){
+        while(answer_idx < answer.length){		// true false ? 부등호 조건 || &&
             if(arrA[arrA_idx] < arrB[arrB_idx])
                 answer[answer_idx++] = arrA[arrA_idx++];
             else
                 answer[answer_idx++] = arrB[arrB_idx++];
         }
-        while(@@@)
-            answer[answer_idx++] = arrA[arrA_idx++];
-        while(@@@)
-            answer[answer_idx++] = arrB[arrB_idx++];
+//        while(@@@)
+//            answer[answer_idx++] = arrA[arrA_idx++];
+//        while(@@@)
+//            answer[answer_idx++] = arrB[arrB_idx++];
         return answer;
     }
     

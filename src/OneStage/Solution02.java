@@ -9,6 +9,8 @@ class Solution02 {
         
         int[][] arrN = new int[n][n];
         
+        
+        
         // 방향 정하기
         // 1:오른쪽, 2:아래, 3:왼쪽, 4:위
         // 오른쪽부터
@@ -18,8 +20,8 @@ class Solution02 {
         int mak = 0;
         
         // 좌표
-        int i = 0;
-        int j = 0;
+        int i = 0;	// 세로
+        int j = 0;	// 가로
         
         // 현재 넣어질 숫자
         int num = 1;
@@ -74,14 +76,14 @@ class Solution02 {
         	}
         	
         	// 다 막혔을 때? > 두번 막혔을 때 빠져나오기
-        	if(mak > 4)
+        	if(mak > 4)	
         		break;
         }
         
+        // 대각선 더하기
         for (int idx = 0; idx < n; idx++) {
         	answer += arrN[idx][idx];
         }
-        
         
         return answer;
     }

@@ -17,7 +17,7 @@ class Solution {
         }
     }
     
-    class PizzaStore @@@ {
+    class PizzaStore implements DeliveryStore {
         private ArrayList<Food> menuList;
         private ArrayList<String> orderList;
         
@@ -33,12 +33,12 @@ class Solution {
             orderList = new ArrayList<String>();
         }
         
-        public @@@{
+        public void setOrderList{
             for(int i = 0; i < orderList.length; i++)
                 this.orderList.add(orderList[i]);
         }
         
-        public @@@{
+        public int getTotalPrice{
             int totalPrice = 0;
             Iterator<String> iter = orderList.iterator();
             while (iter.hasNext()) {

@@ -29,10 +29,10 @@ class Solution {
     }
     
     public int solution(String expression) {
-        int expIndex = func_@@@(@@@);
-        Pair numbers = func_@@@(@@@);
-        int result = func_@@@(@@@);
-        return result;
+        int expIndex = func_b(expression);
+        Pair numbers = func_c(expression, expIndex);
+        int result = func_a(numbers.firstNum, numbers.secondNum, expression.charAt(expIndex));
+        return result;	
     }
 
     // The following is main method to output testcase.
