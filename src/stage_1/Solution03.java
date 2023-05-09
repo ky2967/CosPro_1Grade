@@ -1,4 +1,4 @@
-package OneStage;
+package stage_1;
 // You may use import as below.
 //import java.util.*;
 

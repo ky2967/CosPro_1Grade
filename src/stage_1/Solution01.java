@@ -1,5 +1,5 @@
 // You may use import as below.
-package OneStage;
+package stage_1;
 import java.util.*;
 
 class Solution01 {

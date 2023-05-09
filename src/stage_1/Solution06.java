@@ -1,4 +1,4 @@
-package OneStage;
+package stage_1;
 
 class Solution06 {
     public int func(int record){

@@ -1,4 +1,4 @@
-package OneStage;
+package stage_1;
 
 class Solution07 {
     int solution(int[] prices){

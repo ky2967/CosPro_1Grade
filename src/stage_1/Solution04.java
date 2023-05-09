@@ -1,6 +1,11 @@
+<<<<<<< HEAD:src/OneStage/Solution04.java
 package OneStage;
 
 import java.util.Arrays;
+=======
+package stage_1;
+import java.util.*;
+>>>>>>> e0a66a471e31f28ead073b77f8c9c13c26b5a004:src/stage_1/Solution04.java
 
 class Solution04 {
     public int[] solution(int[] arrA, int[] arrB) {

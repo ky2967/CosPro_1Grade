@@ -1,4 +1,4 @@
-package OneStage;
+package stage_1;
 class Solution09 {
     public String func_a(String str, int len){
         String padZero = "";
