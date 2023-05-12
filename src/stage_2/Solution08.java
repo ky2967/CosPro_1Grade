@@ -3,6 +3,7 @@ package stage_2;
 import java.util.*;
 
 class Solution08 {
+	
     public int[] solution(int[] arr) {
         int left = 0, right = arr.length - 1;
         int idx = 0;
@@ -20,6 +21,28 @@ class Solution08 {
         }
         return answer;
     }
+    
+    
+    
+    
+	
+//    public int[] solution(int[] arr) {
+//        int left = 0, right = arr.length - 1;
+//        int idx = 0;
+//        int[] answer = new int[arr.length];
+//        while(left <= right){
+//            if(idx % 2 == 0){
+//                answer[idx] = arr[left];
+//                left += 1;
+//            }
+//            else{
+//                answer[idx] = arr[right];
+//                right -= 1;
+//            }
+//            idx += 1;
+//        }
+//        return answer;
+//    }
 
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다. main 메소드는 잘못된 부분이 없으니, solution 메소드만 수정하세요.
     public static void main(String[] args) {

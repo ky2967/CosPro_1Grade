@@ -6,43 +6,52 @@ import java.util.*;
 
 class Solution04 {
     public int solution(int[] arr, int K) {
+        // 여기에 코드를 작성해주세요.
         int answer = 0;
         
-        boolean[] visited = new boolean[arr.length];
-        check(arr, visited, 0, arr.length, 3);
         
-        for (int i = 0; i < _lstC.size(); i++) {
-        	ArrayList<Integer> element = _lstC.get(i);
-        	int sum = element.stream().mapToInt(Integer::intValue).sum();
-        	
-        	if(sum % K == 0)
-        		answer++;
-		}
-
+        
         return answer;
     }
-    
-    public static ArrayList<ArrayList<Integer>> _lstC = new ArrayList<ArrayList<Integer>>();
-    public static void check(int[] inputArr, boolean[] visited, int seq, int n, int r) {
-    	if(r == 0) {
-    		ArrayList<Integer> outputArr = new ArrayList<Integer>(); 
-    		for (int i = 0; i < visited.length; i++) {
-				if(visited[i])
-					outputArr.add(inputArr[i]);
-			}
-    		_lstC.add(outputArr);
-			return;
-    	}
-    	
-    	if(seq == n)
-    		return;
-    	
-    	visited[seq] = true;
-    	check(inputArr, visited, seq + 1, n, r - 1);
-    	
-    	visited[seq] = false;
-    	check(inputArr, visited, seq + 1, n, r);
-    }
+	
+//    public int solution(int[] arr, int K) {
+//        int answer = 0;
+//        
+//        boolean[] visited = new boolean[arr.length];
+//        check(arr, visited, 0, arr.length, 3);
+//        
+//        for (int i = 0; i < _lstC.size(); i++) {
+//        	ArrayList<Integer> element = _lstC.get(i);
+//        	int sum = element.stream().mapToInt(Integer::intValue).sum();
+//        	
+//        	if(sum % K == 0)
+//        		answer++;
+//		}
+//
+//        return answer;
+//    }
+//    
+//    public static ArrayList<ArrayList<Integer>> _lstC = new ArrayList<ArrayList<Integer>>();
+//    public static void check(int[] inputArr, boolean[] visited, int seq, int n, int r) {
+//    	if(r == 0) {
+//    		ArrayList<Integer> outputArr = new ArrayList<Integer>(); 
+//    		for (int i = 0; i < visited.length; i++) {
+//				if(visited[i])
+//					outputArr.add(inputArr[i]);
+//			}
+//    		_lstC.add(outputArr);
+//			return;
+//    	}
+//    	
+//    	if(seq == n)
+//    		return;
+//    	
+//    	visited[seq] = true;
+//    	check(inputArr, visited, seq + 1, n, r - 1);
+//    	
+//    	visited[seq] = false;
+//    	check(inputArr, visited, seq + 1, n, r);
+//    }
 
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
     public static void main(String[] args) {
