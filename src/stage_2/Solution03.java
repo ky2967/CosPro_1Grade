@@ -47,6 +47,31 @@ class Solution03 {
         }
         return nextNum - num;
     }
+    
+	
+	
+	
+	
+	
+//	public int solution(int num) {
+//        int nextNum = num;
+//        while(true){
+//            nextNum++;
+//            int length = func_b(nextNum);
+//            if(length % 2 != 0)
+//                continue;
+//
+//            int divisor = func_a(length / 2);
+//            int front = nextNum / divisor;
+//            int back = nextNum % divisor;
+//            
+//            int frontSum = func_c(front);
+//            int backSum = func_c(back);
+//            if(frontSum == backSum)
+//                break;
+//        }
+//        return nextNum - num;
+//    }
 
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
     public static void main(String[] args) {

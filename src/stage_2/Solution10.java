@@ -1,17 +1,42 @@
 package stage_2;
 
 class Solution10 {
+	
     public String solution(String s) {
         s += '#';
         String answer = "";
         for(int i = 0; i < s.length(); ++i){
             if (s.charAt(i) == '0' && s.charAt(i+1) != '0')
-                answer += "0";
-            else if (s.charAt(i) == '1')
-                answer += "1";
+                answer += "0";	// "01"
+            else if(s.charAt(i) == '1')
+                answer += "1";	// 10 11 1#
         }
         return answer;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+	
+//    public String solution(String s) {
+//        s += '#';
+//        String answer = "";
+//        for(int i = 0; i < s.length(); ++i){
+//            if (s.charAt(i) == '0' && s.charAt(i+1) != '0')
+//                answer += "0";
+//            else if (s.charAt(i) == '1')
+//                answer += "1";
+//        }
+//        return answer;
+//    }
 
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다. main 메소드는 잘못된 부분이 없으니, solution 메소드만 수정하세요.
     public static void main(String[] args) {

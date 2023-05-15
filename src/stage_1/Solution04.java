@@ -1,4 +1,5 @@
 package stage_1;
+
 import java.util.*;
 
 class Solution04 {
@@ -14,10 +15,12 @@ class Solution04 {
             else
                 answer[answer_idx++] = arrB[arrB_idx++];
         }
+        
         while(arrA_idx < arrA_len)
             answer[answer_idx++] = arrA[arrA_idx++];
         while(arrB_idx < arrB_len)
             answer[answer_idx++] = arrB[arrB_idx++];
+        
         return answer;
     }
     

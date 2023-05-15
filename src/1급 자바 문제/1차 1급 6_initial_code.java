@@ -9,13 +9,15 @@ class Solution{
         int cnt = 0;
         for(int i = 0; i < recordA.length; i++){
             if(recordA[i] == recordB[i])
-                continue;
-            else if(recordA[i] == func(recordB[i]))
-                cnt = cnt + 3;
+                continue;			// 비겼을때
+            else if(recordA[i] == func(recordB[i]))	// 가위 a:0 b:2
+                cnt = cnt + 3;		// 이겼을때
             else
-                cnt = cnt - 1;
+                //cnt = cnt - 1;		// 졌을때
+            	cnt = cnt - 1 < 0 ? 0 : cnt - 1;
+            	cnt = cnt == -1 ? 0 : cnt--;
         }
-        return cnt;
+        return cnt;	// 13
     }
 
     // The following is main method to output testcase. The main method is correct and you shall correct solution method.
